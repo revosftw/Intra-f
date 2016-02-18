@@ -22,6 +22,12 @@ init = function(){
     }
     scrollNav();
 
+    $('.buffer a').click(function(){
+        $('html, body').stop().animate({
+            scrollTop: $( $(this).attr('href') ).offset().top
+        }, 1600);
+    });
+
     $('#menu_btn').click(function(){
         console.log('click');
         if($(this).hasClass('open')){

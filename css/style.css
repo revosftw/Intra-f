@@ -47,7 +47,8 @@
     #newron>.buffer{ background-image: url('../img/newron_bck.jpg'); }
     #bridge>.buffer{ background-image: url('../img/newron_bck.jpg'); }
     #coding .overlay,
-    #foodforfun .overlay{
+    #foodforfun .overlay,
+    #bridge .overlay{
         background: rgba(161, 55, 76, 0.6);
     }
     #robotics .overlay,
@@ -270,7 +271,8 @@
         background-color:#0288d1;
     }
     #coding_btn,
-    #foodforfun_btn{
+    #foodforfun_btn,
+    #bridge_btn{
         background-color: rgb(161, 55, 76);
     }
     #robotics_btn,
@@ -280,9 +282,6 @@
     #gaming_btn,
     #newron_btn{
         background-color: rgb(227, 59, 59);
-    }
-    #bridge_btn{
-        background-color: #333;
     }
     #foodforfun_btn>i{
         padding:0 3px;
