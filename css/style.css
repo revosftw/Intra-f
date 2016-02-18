@@ -60,10 +60,10 @@
     }
     .parallax-block{
         background-color: #222;
-        overflow-y: hidden;
+        overflow-y: hidden; padding-bottom:20px;
     }
-    .parallax-block>div:nth-child(2){ height:90vh;}
-    .parallax-block>div:nth-child(2)>div:nth-child(2){ margin-top: 10%; }
+    .parallax-block>div:nth-child(2){ height:97vh;}
+    .parallax-block>div:nth-child(2)>div:nth-child(2){ margin-top: 10%;}
     .heading h2{
         color:#fff;
         text-align: center;
@@ -111,7 +111,12 @@
         }
         #foodforfun .buffer p,
         #bridge .buffer p{ top:15%;}
-
+        #robotics .event:nth-child(3),
+        #foodforfun .event:nth-child(3),
+        #bridge .event:first-child{
+            margin-left:25%;
+        }
+        .circle{font-size: 50px; padding:18px; }
 
     }
     /* Small devices (tablets, 768px and up) */
@@ -122,6 +127,11 @@
         }
         .buffer p{ top:35%;}
         #bridge .buffer p{ top:15%;}
+        #robotics .event:nth-child(3),
+        #foodforfun .event:nth-child(3),
+        #bridge .event:first-child{
+            margin-left:25%;
+        }
     }
     /* tablets/desktops and up ----------- */
     @media (min-width: 992px) and (max-width: 1199px) {
@@ -129,13 +139,35 @@
         .parallax-block{
             overflow-y:hidden;
         }
-
+        .parallax-block>div:nth-child(2)>div:nth-child(2){ margin-top: 0;}
+        #robotics .event:first-child,
+        #foodforfun .event:first-child{
+            margin-left:12.5%;
+        }
+        #infocus .event:first-child,
+        #newron .event:first-child{
+            margin-left:25%;
+        }
+        #bridge .event:first-child{
+            margin-left:37.5%;
+        }
     }
     /* large desktops and up ----------- */
     @media screen and (min-width: 1200px) {
         .title h2{ font-size: 8em; }
         .parallax-block{
             overflow-y:hidden;
+        }
+        #robotics .event:first-child,
+        #foodforfun .event:first-child{
+            margin-left:12.5%;
+        }
+        #infocus .event:first-child,
+        #newron .event:first-child{
+            margin-left:25%;
+        }
+        #bridge .event:first-child{
+            margin-left:37.5%;
         }
 
     }
@@ -210,6 +242,7 @@
         position: fixed;
         bottom:40px;
         right:-80vw;
+        z-index: 3;
     }
     #hidden_menu{
         display:none;
@@ -221,11 +254,11 @@
         display: inline-block;
         z-index: 2;
         margin-top:10px;
+        box-shadow: 5px 5px 10px #212121;
         transition: all 0.3s ease-in-out 0.3s;
     }
     #nav-menu .btn:hover{
         color:#fff;
-        box-shadow: 5px 5px 10px #212121;
         padding:13px;
         transition: all 0.3s ease-in-out 0.3s;
     }
@@ -271,4 +304,25 @@
         color:#fff;
         text-shadow: 2px 3px 3px #212121;
         padding:0 3px;
+    }
+    @media screen and (max-width: 767px) {
+        #nav-menu{
+            right:0;
+            bottom:30px;
+        }
+        #nav-menu .btn{
+            padding:8px;
+        }
+        #nav-menu .btn:hover{
+            padding:8px;
+        }
+        #nav-menu .btn>i{
+            font-size: 18px;
+        }
+        #menu_btn>i{
+            font-size: 24px !important;
+        }
+        #menu_btn{
+            padding:12px !important;
+        }
     }
