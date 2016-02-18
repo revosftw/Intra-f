@@ -1,0 +1,274 @@
+/*
+-----------------------------------------------------
+                        General
+-----------------------------------------------------
+*/
+    html,body{
+        margin:0;
+        padding:0;
+    }
+    body{
+        position: relative;
+    }
+    body>div:first-child{ width:100%; }
+    .block{ height:100vh; }
+    .buffer{
+        height:auto !important;
+        padding: 0;
+        padding:25% 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+    }
+    .buffer p{
+        text-align: center;
+        position: absolute;
+        font-family: 'Raleway';
+        font-weight: 100;
+        font-size: 92px;
+        color: #fff;
+        top:40%;
+        text-transform: uppercase;;
+        width:100%;
+    }
+    .buffer .overlay{
+        position: absolute;
+        height:100%;
+        width:100%;
+        top:0;
+    }
+    #coding>.buffer{ background-image: url('../img/coding_bck.jpg'); }
+    #robotics>.buffer{ background-image: url('../img/robotics_bck.jpg'); }
+    #gaming>.buffer{ background-image: url('../img/gaming_bck.jpg'); }
+    #foodforfun>.buffer{ background-image: url('../img/food_bck.jpg'); }
+    #infocus>.buffer{ background-image: url('../img/infocus_bck.jpg'); }
+    #newron>.buffer{ background-image: url('../img/newron_bck.jpg'); }
+    #bridge>.buffer{ background-image: url('../img/newron_bck.jpg'); }
+    #coding .overlay,
+    #foodforfun .overlay{
+        background: rgba(161, 55, 76, 0.6);
+    }
+    #robotics .overlay,
+    #infocus .overlay{
+        background: rgba(80, 191, 173, 0.6);
+    }
+    #gaming .overlay,
+    #newron .overlay{
+        background: rgba(227, 59, 59, 0.6);
+    }
+    .parallax-block{
+        background-color: #222;
+        overflow-y: hidden;
+    }
+    .parallax-block>div:nth-child(2){ height:90vh;}
+    .parallax-block>div:nth-child(2)>div:nth-child(2){ margin-top: 10%; }
+    .heading h2{
+        color:#fff;
+        text-align: center;
+        font-family: 'Lato';
+        font-weight: 300;
+        font-size: 42px;
+        text-transform: uppercase;
+    }
+    .circle{
+        background:rgba(0,0,0,0.5);
+        border-radius:50%;
+        margin:15px 0;
+        width:100%;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        overflow: hidden;
+        border: 5px solid rgb(161, 55, 76);
+        color:rgb(161, 55, 76);
+        text-align: center;
+        padding:25px;
+        font-size: 150px;
+        cursor: pointer;
+    }
+    .circle:hover{
+        transform:rotate(360deg);
+        transition-duration:1s;
+    }
+    .event p{
+        text-align: center;
+        font-size: 20px;
+        color:#fff;
+        font-family: 'Lato';
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+
+    /* Extra small devices (phones, up to 480px) */
+    @media screen and (max-width: 767px) {
+        .title h2{ font-size: 4em; }
+        .buffer p{
+            font-size: 52px;
+            top:30%;
+        }
+        #foodforfun .buffer p,
+        #bridge .buffer p{ top:15%;}
+
+
+    }
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) and (max-width: 991px) {
+        .title h2{ font-size: 4em; }
+        .parallax-block{
+            overflow-x:hidden;
+        }
+        .buffer p{ top:35%;}
+        #bridge .buffer p{ top:15%;}
+    }
+    /* tablets/desktops and up ----------- */
+    @media (min-width: 992px) and (max-width: 1199px) {
+        .title h2{ font-size: 8em; }
+        .parallax-block{
+            overflow-y:hidden;
+        }
+
+    }
+    /* large desktops and up ----------- */
+    @media screen and (min-width: 1200px) {
+        .title h2{ font-size: 8em; }
+        .parallax-block{
+            overflow-y:hidden;
+        }
+
+    }
+
+
+/*
+-----------------------------------------------------
+                        Top
+-----------------------------------------------------
+*/
+    #top{
+        background:url('../img/back2.png') no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+
+/*
+-----------------------------------------------------
+                        Footer
+----------------------------------------------------
+*/
+    footer{
+        background:#333;
+        position: relative;
+    }
+    #social{ margin-left:32%; }
+    #social a{
+        font-size: 22px;
+        color:#fff;
+    }
+    #social i{ margin:0 5px; }
+    #social i:first-child{ margin-left:15px;}
+    .facebook:hover i{ color:#43609C; }
+    .instagram:hover i{ color:#9E7458; }
+    .youtube:hover i{ color:#E62117; }
+    #love{
+        color:#f5f5f5;
+        font-family: 'Lato';
+        font-weight: 400;
+        margin:5px;
+    }
+    #love a{ color:#f5f5f5; }
+    /* Extra small devices (phones, up to 480px) */
+    @media screen and (max-width: 767px) {
+        #social{ margin-left:6%; }
+        #love{ margin-left:10px; }
+    }
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) and (max-width: 991px) {
+        #social{ margin-left:16%; }
+        #love{ margin-left:20px; }
+    }
+    /* tablets/desktops and up ----------- */
+    @media (min-width: 992px) and (max-width: 1199px) {
+        #social{ margin-left:30.5%; }
+        #love{ margin-left:10px; }
+    }
+    /* large desktops and up ----------- */
+    @media screen and (min-width: 1200px) {
+        #social{ margin-left:30.5%; }
+        #love{ margin-left:10px; }
+    }
+
+/*
+-----------------------------------------------------
+                    Menu
+-----------------------------------------------------
+*/
+    #nav-menu{
+        position: fixed;
+        bottom:40px;
+        right:-80vw;
+    }
+    #hidden_menu{
+        display:none;
+    }
+    #nav-menu .btn{
+        color:#fff;
+        padding:12px;
+        border-radius: 50%;
+        display: inline-block;
+        z-index: 2;
+        margin-top:10px;
+        transition: all 0.3s ease-in-out 0.3s;
+    }
+    #nav-menu .btn:hover{
+        color:#fff;
+        box-shadow: 5px 5px 10px #212121;
+        padding:13px;
+        transition: all 0.3s ease-in-out 0.3s;
+    }
+    #nav-menu .btn>i{
+        font-size: 26px;
+        text-shadow: 2px 3px 3px #212121;
+    }
+    #top_btn{
+        background-color:#0288d1;
+    }
+    #coding_btn,
+    #foodforfun_btn{
+        background-color: rgb(161, 55, 76);
+    }
+    #robotics_btn,
+    #infocus_btn{
+        background-color: rgb(80, 191, 173);
+    }
+    #gaming_btn,
+    #newron_btn{
+        background-color: rgb(227, 59, 59);
+    }
+    #bridge_btn{
+        background-color: #333;
+    }
+    #foodforfun_btn>i{
+        padding:0 3px;
+    }
+    #newron_btn>i{
+        padding:0 4px;
+    }
+    #menu_btn{
+        display: inline-block;
+        border-radius: 50%;
+        box-shadow: 5px 5px 10px #212121;
+        background-color: #333;
+        z-index: 2;
+        padding:20px;
+    }
+    #menu_btn>i{
+        position: relative;
+        font-size: 32px;
+        color:#fff;
+        text-shadow: 2px 3px 3px #212121;
+        padding:0 3px;
+    }

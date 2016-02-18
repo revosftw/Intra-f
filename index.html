@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Intra-Fest</title>
+
+        <!-- JQuery -->
+        <script src="js/jquery-1.12.0.min.js"></script>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css" crossorigin="anonymous">
+        <script src="bootstrap/bootstrap.min.js" crossorigin="anonymous"></script>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Raleway:100,300,400' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+        <!-- Custom -->
+        <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+        <script type="text/javascript" src="js/script.js"></script>
+        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script> -->
+        <script type="text/javascript">
+            $(window).load(function(){
+                init();
+            })
+        </script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div id="top" class="row parallax-block"></div>
+
+            <div id="coding" class="row parallax-block">
+                <div class="container-fluid buffer block">
+                    <div class="overlay"></div>
+                    <p>
+                        coding
+                    </p>
+                </div>
+                <div class="container-fluid block">
+                    <div class="heading container-fluid col-md-12">
+                        <h2>Coding</h2>
+                    </div>
+                    <div class="container-fluid">
+                        <div id="coderace" class="event col-md-3 col-sm-3 col-xs-6">
+                            <div class="circle" data-toggle="modal" data-target="#coderace-modal">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            <p>
+                                Code Race
+                            </p>
+                        </div>
+                        <div id="bughunt" class="event col-md-3 col-sm-3 col-xs-6">
+                            <div class="circle" data-toggle="modal" data-target="#bughunt-modal">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            <p>
+                                Bug Hunt
+                            </p>
+                        </div>
+                        <div id="web404" class="event col-md-3 col-sm-3 col-xs-6">
+                            <div class="circle" data-toggle="modal" data-target="#web404-modal">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            <p>
+                                404: Not Found
+                            </p>
+                        </div>
+                        <div id="crypto" class="event col-md-3 col-sm-3 col-xs-6">
+                            <div class="circle" data-toggle="modal" data-target="#crypto-modal">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            <p>
+                                Cryptoquest
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End of Coding Div -->
+
+            <div id="robotics" class="row parallax-block">
+                <div class="container-fluid buffer block">
+                    <div class="overlay"></div>
+                    <p>
+                        robotics
+                    </p>
+                </div>
+                <div class="container-fluid block">
+                    <div class="heading container-fluid col-md-12">
+                        <h2>Robotics</h2>
+                    </div>
+                    <div class="container-fluid">
+                        <div id="atb" class="event col-md-3 col-sm-3 col-xs-6">
+                            <div class="circle" data-toggle="modal" data-target="#atb-modal">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            <p>
+                                All Terrain Bot
+                            </p>
+                        </div>
+                        <div id="kabaddi" class="event col-md-3 col-sm-3 col-xs-6">
+                            <div class="circle" data-toggle="modal" data-target="#kabaddi-modal">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            <p>
+                                Robo Kabaddi
+                            </p>
+                        </div>
+                        <div id="auto" class="event col-md-3 col-sm-3 col-xs-6">
+                            <div class="circle" data-toggle="modal" data-target="#auto-modal">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            <p>
+                                Autonomous
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End of Robotics Div -->
+
+            <div id="gaming" class="row parallax-block">
+                <div class="container-fluid buffer block">
+                    <div class="overlay"></div>
+                    <p>
+                        gaming
+                    </p>
+                </div>
+                <div class="container-fluid block">
+                    <div class="heading container-fluid col-md-12">
+                        <h2>Gaming</h2>
+                    </div>
+                    <div class="container-fluid">
+                        <div id="cs16" class="event col-md-3 col-sm-3 col-xs-6">
+                            <div class="circle" data-toggle="modal" data-target="#cs16-modal">
+                                <i class="fa fa-gamepad"></i>
+                            </div>
+                            <p>
+                                Counter Strike 1.6
+                            </p>
+                        </div>
+                        <div id="nfs" class="event col-md-3 col-sm-3 col-xs-6">
+                            <div class="circle" data-toggle="modal" data-target="#nfs-modal">
+                                <i class="fa fa-gamepad"></i>
+                            </div>
+                            <p>
+                                Need For Speed
+                            </p>
+                        </div>
+                        <div id="fifa" class="event col-md-3 col-sm-3 col-xs-6">
+                            <div class="circle" data-toggle="modal" data-target="#fifa-modal">
+                                <i class="fa fa-gamepad"></i>
+                            </div>
+                            <p>
+                                FIFA
+                            </p>
+                        </div>
+                        <div id="mk" class="event col-md-3 col-sm-3 col-xs-6">
+                            <div class="circle" data-toggle="modal" data-target="#mk-modal">
+                                <i class="fa fa-gamepad"></i>
+                            </div>
+                            <p>
+                                Mortal Kombat
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End of Gaming Div -->
+
+            <div id="foodforfun" class="row parallax-block">
+                <div class="container-fluid buffer block">
+                    <div class="overlay"></div>
+                    <p>
+                        food for fun
+                    </p>
+                </div>
+                <div class="container-fluid block">
+                    <div class="heading container-fluid col-md-12">
+                        <h2>Food For Fun</h2>
+                    </div>
+                    <div class="container-fluid">
+                        <div id="xquizit" class="event col-md-3 col-sm-3 col-xs-6">
+                            <div class="circle" data-toggle="modal" data-target="#xquizit-modal">
+                                <i class="fa fa-cutlery"></i>
+                            </div>
+                            <p>
+                                X Quiz it
+                            </p>
+                        </div>
+                        <div id="foodrelay" class="event col-md-3 col-sm-3 col-xs-6">
+                            <div class="circle" data-toggle="modal" data-target="#foodrelay-modal">
+                                <i class="fa fa-cutlery"></i>
+                            </div>
+                            <p>
+                                Food Relay
+                            </p>
+                        </div>
+                        <div id="casestudy" class="event col-md-3 col-sm-3 col-xs-6">
+                            <div class="circle" data-toggle="modal" data-target="#casestudy-modal">
+                                <i class="fa fa-cutlery"></i>
+                            </div>
+                            <p>
+                                Case Study
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End of Food For Fun Div -->
+
+            <div id="infocus" class="row parallax-block">
+                <div class="container-fluid buffer block">
+                    <div class="overlay"></div>
+                    <p>
+                        in focus
+                    </p>
+                </div>
+                <div class="container-fluid block">
+                    <div class="heading container-fluid col-md-12">
+                        <h2>In Focus</h2>
+                    </div>
+                    <div class="container-fluid">
+                        <div id="shoot" class="event col-md-3 col-sm-3 col-xs-6">
+                            <div class="circle" data-toggle="modal" data-target="#shoot-modal">
+                                <i class="fa fa-camera"></i>
+                            </div>
+                            <p>
+                                Shoot 'em Up
+                            </p>
+                        </div>
+                        <div id="bughunt" class="event col-md-3 col-sm-3 col-xs-6">
+                            <div class="circle" data-toggle="modal" data-target="#bughunt-modal">
+                                <i class="fa fa-camera"></i>
+                            </div>
+                            <p>
+                                Crumbs
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End of infocus Div -->
+
+            <div id="newron" class="row parallax-block">
+                <div class="container-fluid buffer block">
+                    <div class="overlay"></div>
+                    <p>
+                        newron
+                    </p>
+                </div>
+                <div class="container-fluid block">
+                    <div class="heading container-fluid col-md-12">
+                        <h2>Newron</h2>
+                    </div>
+                    <div class="container-fluid">
+                        <div id="quiz" class="event col-md-3 col-sm-3 col-xs-6">
+                            <div class="circle" data-toggle="modal" data-target="#quiz-modal">
+                                <i class="fa fa-microphone"></i>
+                            </div>
+                            <p>
+                                Quiz
+                            </p>
+                        </div>
+                        <div id="debate" class="event col-md-3 col-sm-3 col-xs-6">
+                            <div class="circle" data-toggle="modal" data-target="#debate-modal">
+                                <i class="fa fa-microphone"></i>
+                            </div>
+                            <p>
+                                Debate
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End of Newron Div -->
+
+            <div id="bridge" class="row parallax-block">
+                <div class="container-fluid buffer block">
+                    <div class="overlay"></div>
+                    <p>
+                        bridge building
+                    </p>
+                </div>
+                <div class="container-fluid block">
+                    <div class="heading container-fluid col-md-12">
+                        <h2>bridge building</h2>
+                    </div>
+                    <div class="container-fluid">
+                        <div id="bbuild" class="event col-md-3 col-sm-3 col-xs-6">
+                            <div class="circle" data-toggle="modal" data-target="#bbuild-modal">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            <p>
+                                bridge building
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End of Bridge Div -->
+
+
+
+            <footer class="row">
+                <span id="love">
+                    Made with <i class="fa fa-heart-o" style="color:#e53935;font-size:18px;font-weight:bold;"></i> by
+                    <a href="#">Geekonix</a>.
+                </span>
+
+                <span id="social">
+                    <a href="#" class="facebook"><i class="fa fa-facebook-official"></i></a>
+                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="youtube"><i class="fa fa-youtube-play"></i></a>
+                </span>
+            </footer>
+
+        </div> <!-- End of Outer Container -->
+
+        <div id="nav-menu" class="container">
+            <div id="hidden_menu" class="">
+                <a href="#top"><div id="top_btn" class="btn">
+                    <i class="fa fa-home"></i>
+                </div></a><br/>
+
+                <a href="#coding"><div id="coding_btn" class="btn">
+                    <i class="fa fa-code"></i>
+                </div></a><br/>
+
+                <a href="#robotics"><div id="robotics_btn" class="btn">
+                    <i class="fa fa-code"></i>
+                </div></a><br/>
+
+                <a href="#gaming"><div id="gaming_btn" class="btn">
+                    <i class="fa fa-gamepad"></i>
+                </div></a><br/>
+
+                <a href="#foodforfun"><div id="foodforfun_btn" class="btn">
+                    <i class="fa fa-cutlery"></i>
+                </div></a><br/>
+
+                <a href="#infocus"><div id="infocus_btn" class="btn">
+                    <i class="fa fa-camera"></i>
+                </div></a><br/>
+
+                <a href="#newron"><div id="newron_btn" class="btn">
+                    <i class="fa fa-microphone"></i>
+                </div></a><br/>
+
+                <a href="#bridge"><div id="bridge_btn" class="btn">
+                    <i class="fa fa-code"></i>
+                </div></a>
+            </div>
+
+            <div id="menu_btn" title="Menu" class="btn">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+
+        <!-- MODALS -->
+        <div id="coderace-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <div id="bughunt-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <div id="web404-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <div id="crypto-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <div id="atb-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <div id="kabaddi-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <div id="auto-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <div id="cs16-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <div id="nfs-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <div id="fifa-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <div id="mk-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <div id="xquizit-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <div id="foodrelay-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <div id="casestudy-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <div id="shoot-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <div id="crumbs-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <div id="quiz-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <div id="debate-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <div id="bridge-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+    </body>
+</html>
