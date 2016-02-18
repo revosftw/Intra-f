@@ -45,7 +45,7 @@
     #foodforfun>.buffer{ background-image: url('../img/food_bck.jpg'); }
     #infocus>.buffer{ background-image: url('../img/infocus_bck.jpg'); }
     #newron>.buffer{ background-image: url('../img/newron_bck.jpg'); }
-    #bridge>.buffer{ background-image: url('../img/newron_bck.jpg'); }
+    #bridge>.buffer{ background-image: url('../img/bridge_bck.jpg'); }
     #coding .overlay,
     #foodforfun .overlay,
     #bridge .overlay{
@@ -61,7 +61,8 @@
     }
     .parallax-block{
         background-color: #222;
-        overflow-y: hidden; padding-bottom:20px;
+        overflow-y: hidden;
+        padding-bottom:20px;
     }
     .parallax-block>div:nth-child(2){ height:97vh;}
     .parallax-block>div:nth-child(2)>div:nth-child(2){ margin-top: 10%;}
@@ -101,6 +102,7 @@
         font-weight: 300;
         text-transform: uppercase;
     }
+    #bridge>div:nth-child(2){ height:92vh;}
 
 
     /* Extra small devices (phones, up to 480px) */
@@ -324,4 +326,20 @@
         #menu_btn{
             padding:12px !important;
         }
+    }
+
+/*
+-----------------------------------------------------
+                        Logos
+-----------------------------------------------------
+*/
+    #ti-logo{
+        height:70px;
+        width:70px;
+        border-radius: 50%;
+        position: fixed;
+        top:30px;
+        left:40px;
+        z-index: 3;
+        box-shadow: 5px 5px 10px #212121;
     }
