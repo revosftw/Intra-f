@@ -146,7 +146,6 @@
         }
         #foodforfun .buffer p,
         #bridge .buffer p{ top:15%;}
-        #robotics .event:nth-child(3),
         #foodforfun .event:nth-child(3),
         #bridge .event:first-child{
             margin-left:25%;
@@ -162,7 +161,6 @@
         }
         .buffer p{ top:35%;}
         #bridge .buffer p{ top:15%;}
-        #robotics .event:nth-child(3),
         #foodforfun .event:nth-child(3),
         #bridge .event:first-child{
             margin-left:25%;
@@ -175,7 +173,6 @@
             overflow-y:hidden;
         }
         .parallax-block>div:nth-child(2)>div:nth-child(2){ margin-top: 0;}
-        #robotics .event:first-child,
         #foodforfun .event:first-child{
             margin-left:12.5%;
         }
@@ -193,7 +190,6 @@
         .parallax-block{
             overflow-y:hidden;
         }
-        #robotics .event:first-child,
         #foodforfun .event:first-child{
             margin-left:12.5%;
         }
@@ -280,7 +276,7 @@
     #nav-menu{
         position: fixed;
         bottom:40px;
-        right:-80vw;
+        right:-82vw;
         z-index: 3;
     }
     #hidden_menu{
@@ -375,6 +371,36 @@
 
 /*
 -----------------------------------------------------
+                    Schedule Button
+-----------------------------------------------------
+*/
+    #schedule-btn{
+        position: fixed;
+        bottom:40px;
+        right:120px;
+        height:53px;
+        width:53px;
+        background-color: #333;
+        color:#fff;
+        box-shadow: 5px 5px 10px #212121;
+        padding:5px 15px;
+        border-radius: 50%;
+        display: inline-block;
+        z-index: 2;
+        font-size: 28px;
+        transition: all 0.3s ease-in-out 0.3s;
+    }
+    #schedule-btn:hover{
+        height: 55px;
+        width: 55px;
+        transition: all 0.3s ease-in-out 0.3s;
+    }
+    #schedule-btn>i{
+        position: relative;
+    }
+
+/*
+-----------------------------------------------------
                         Logos
 -----------------------------------------------------
 */
@@ -419,7 +445,7 @@
         text-transform: uppercase;
         font-size:1.5em;
         font-family: 'Raleway';
-        background: #eee;
+        background: rgba(255,255,255,0.5);
         margin-bottom: 10px;
     }
     .central-contact-block-title{
@@ -427,7 +453,6 @@
         color: white;
     }
     #contacts-block .row .col-md-3{
-        background: white;
         padding: 20px;
         font-family: 'Lato';
         box-shadow: 1px 1px 1px 1px #060606 inset;
@@ -441,4 +466,27 @@
     }
     .contact-block-contact-phone{
         font-size:0.85em;
+    }
+    #coding-contact,
+    #fff-contact,
+    #bridge-contact{
+        background: rgb(161, 55, 76);
+    }
+    #robotics-contact,
+    #infocus-contact{
+        background: rgb(80, 191, 173);
+    }
+    #gaming-contact,
+    #newron-contact{
+        background: rgb(227, 59, 59);
+    }
+
+/*
+-----------------------------------------------------
+                        Modal
+-----------------------------------------------------
+*/
+    .modal-dialog{
+        font-size: 20px;
+        text-align: center;
     }
