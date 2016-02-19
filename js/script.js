@@ -1,5 +1,5 @@
 init = function(){
-    // $(window).scrollTop(0);
+    $(window).scrollTop(0);
     var h=$(window).height();
     $('#top').css('height',h);
     $('#hidden_menu').hide();
