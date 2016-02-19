@@ -46,6 +46,7 @@
     #infocus>.buffer{ background-image: url('../img/infocus_bck.jpg'); }
     #newron>.buffer{ background-image: url('../img/newron_bck.jpg'); }
     #bridge>.buffer{ background-image: url('../img/bridge_bck.jpg'); }
+    #contacts>.buffer{ background-image: url('../img/contacts_bck.jpg'); }
     #coding .overlay,
     #foodforfun .overlay,
     #bridge .overlay{
@@ -58,6 +59,9 @@
     #gaming .overlay,
     #newron .overlay{
         background: rgba(227, 59, 59, 0.6);
+    }
+    #contacts .overlay{
+        background: rgba(2, 136, 209, 0.6);
     }
     .parallax-block{
         background-color: #222;
@@ -83,17 +87,36 @@
         z-index: 1;
         display: inline-block;
         overflow: hidden;
-        border: 5px solid rgb(161, 55, 76);
-        color:rgb(161, 55, 76);
         text-align: center;
         padding:25px;
         font-size: 150px;
         cursor: pointer;
     }
+    .circle p{
+        font-size: 130px !important;
+        color:inherit !important;
+    }
     .circle:hover{
         transform:rotate(360deg);
         transition-duration:1s;
     }
+    #coding .circle,
+    #foodforfun .circle,
+    #bridge .circle{
+        border: 5px solid rgb(161, 55, 76);
+        color:rgb(161, 55, 76);
+    }
+    #robotics .circle,
+    #infocus .circle{
+        border: 5px solid rgb(80, 191, 173);
+        color:rgb(80, 191, 173);
+    }
+    #gaming .circle,
+    #newron .circle{
+        border: 5px solid rgb(227, 59, 59);
+        color:rgb(227, 59, 59);
+    }
+
     .event p{
         text-align: center;
         font-size: 20px;
@@ -101,6 +124,15 @@
         font-family: 'Lato';
         font-weight: 300;
         text-transform: uppercase;
+    }
+    .nxt-btn{
+        background:rgba(0,0,0,0.7);
+        position:absolute;
+        display: block;
+        left:48%;
+        bottom:20%;
+        border-radius: 50%;
+        padding:20px 25px;
     }
     /*#bridge>div:nth-child(2){ height:92vh;}*/
 
@@ -202,7 +234,6 @@
         width:100%;
         z-index: 3;
     }
-    #social{ margin-left:30%; }
     #social a{
         font-size: 22px;
         color:#fff;
@@ -237,7 +268,7 @@
     }
     /* large desktops and up ----------- */
     @media screen and (min-width: 1200px) {
-        #social{ margin-left:30.5%; }
+        #social{ margin-left:29%; }
         #love{ margin-left:10px; }
     }
 
@@ -347,13 +378,67 @@
                         Logos
 -----------------------------------------------------
 */
-    #ti-logo{
+    #logo-bar{
+        display: inline-block;
+        margin-top:20px;
+        margin-left:30px;
+    }
+    .logo-circ{
         height:50px;
         width:50px;
         border-radius: 50%;
-        position: fixed;
-        top:30px;
-        left:40px;
         z-index: 3;
-        box-shadow: 5px 5px 10px #212121;
+        /*box-shadow: 5px 5px 10px #212121;*/
+    }
+    #ti-logo,
+    #gx-logo,
+    #edge-logo{
+        float: left;
+        margin:0 10px;
+    }
+
+/*
+-----------------------------------------------------
+                        Contact
+-----------------------------------------------------
+*/
+    .contact-block-contact-1{
+        text-align: left;
+    }
+    .contact-block-contact-1 i{
+        margin-left: 10px;
+    }
+    .contact-block-contact-2{
+        text-align: right;
+    }
+    .contact-block-contact-2 i{
+        margin-right: 10px;
+    }
+    .contact-block-title{
+        text-align: center;
+        text-transform: uppercase;
+        font-size:1.5em;
+        font-family: 'Raleway';
+        background: #eee;
+        margin-bottom: 10px;
+    }
+    .central-contact-block-title{
+        background: #222;
+        color: white;
+    }
+    #contacts-block .row .col-md-3{
+        background: white;
+        padding: 20px;
+        font-family: 'Lato';
+        box-shadow: 1px 1px 1px 1px #060606 inset;
+    }
+    .contact-block-contact-name i.fa-facebook{
+        color: #425F9C;
+    }
+    .contact-block-contact-name{
+        font-family: 'Raleway';
+        text-transform: uppercase;
+    }
+    .contact-block-contact-phone{
+        font-size:0.85em;
     }
