@@ -217,7 +217,8 @@
 -----------------------------------------------------
 */
     #top{
-        background:url('../img/back2.png') no-repeat;
+        /*background:url('../img/back2.jpg') no-repeat;*/
+        background:url('../img/back.png') no-repeat;
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
