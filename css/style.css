@@ -241,6 +241,7 @@
         font-size: 22px;
         color:#fff;
     }
+    #social a:hover{ text-decoration: none; }
     #social i{ margin:0 5px; }
     #social i:first-child{ margin-left:15px;}
     .facebook:hover i{ color:#43609C; }
