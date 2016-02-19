@@ -276,7 +276,7 @@
     #nav-menu{
         position: fixed;
         bottom:40px;
-        right:-82vw;
+        right:40px;
         z-index: 3;
     }
     #hidden_menu{
