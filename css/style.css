@@ -521,3 +521,6 @@
         font-weight: 300;
         color:#333;
     }
+    #comingsoon-modal .modal-body{
+        text-transform: uppercase;
+    }
