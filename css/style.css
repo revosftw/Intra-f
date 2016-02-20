@@ -39,14 +39,14 @@
         width:100%;
         top:0;
     }
-    #coding>.buffer{ background-image: url('../img/coding_bck.jpg'); }
-    #robotics>.buffer{ background-image: url('../img/robotics_bck.jpg'); }
-    #gaming>.buffer{ background-image: url('../img/gaming_bck.jpg'); }
-    #foodforfun>.buffer{ background-image: url('../img/food_bck.jpg'); }
-    #infocus>.buffer{ background-image: url('../img/infocus_bck.jpg'); }
-    #newron>.buffer{ background-image: url('../img/newron_bck.jpg'); }
-    #bridge>.buffer{ background-image: url('../img/bridge_bck.jpg'); }
-    #contacts>.buffer{ background-image: url('../img/contacts_bck.jpg'); }
+    #coding>.buffer{ background-image: url('../img/bg/coding_bck.jpg'); }
+    #robotics>.buffer{ background-image: url('../img/bg/robotics_bck.jpg'); }
+    #gaming>.buffer{ background-image: url('../img/bg/gaming_bck.jpg'); }
+    #foodforfun>.buffer{ background-image: url('../img/bg/food_bck.jpg'); }
+    #infocus>.buffer{ background-image: url('../img/bg/infocus_bck.jpg'); }
+    #newron>.buffer{ background-image: url('../img/bg/newron_bck.jpg'); }
+    #bridge>.buffer{ background-image: url('../img/bg/bridge_bck.jpg'); }
+    #contacts>.buffer{ background-image: url('../img/bg/contacts_bck.jpg'); }
     #coding .overlay,
     #foodforfun .overlay,
     #bridge .overlay{
@@ -218,7 +218,7 @@
 */
     #top{
         /*background:url('../img/back2.jpg') no-repeat;*/
-        background:url('../img/back.png') no-repeat;
+        background:url('../img/bg/back.png') no-repeat;
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
