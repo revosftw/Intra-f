@@ -22,15 +22,24 @@
         background-attachment: fixed;
         position: relative;
     }
+    #robotics .buffer>div:nth-child(2){
+        z-index: 2;
+        color: #fff;
+        top:10%;
+        width: 100%;
+        text-align: center;
+        font-family: 'Raleway';
+        font-weight: 100;
+        text-transform: uppercase;
+    }
     .buffer p{
         text-align: center;
-        position: absolute;
+        position: relative;
         font-family: 'Raleway';
         font-weight: 100;
         font-size: 92px;
         color: #fff;
-        top:40%;
-        text-transform: uppercase;;
+        text-transform: uppercase;
         width:100%;
     }
     .buffer .overlay{
@@ -70,7 +79,7 @@
     }
     .parallax-block>div:nth-child(2){ height:97vh;}
     .parallax-block>div:nth-child(2)>div:nth-child(2){ margin-top: 10%;}
-    .heading h2{
+    .heading{
         color:#fff;
         text-align: center;
         font-family: 'Lato';

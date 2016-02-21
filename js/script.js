@@ -3,7 +3,7 @@ init = function(){
     var h=$(window).height();
     $('#top').css('height',h);
     $('#hidden_menu').hide();
-    $('.circle').height($('.circle').width());
+    // $('.circle').height($('.circle').width());
     console.log($('.circle').height());
     console.log($('.circle').width());
 
@@ -22,10 +22,14 @@ init = function(){
     }
     scrollNav();
 
-    $('.buffer a').click(function(){
-        $('html, body').stop().animate({
-            scrollTop: $( $(this).attr('href') ).offset().top
-        }, 1600);
+    $('.buffer a').click(function(e){
+        if($(this).attr('href')!="http://shop.sumeetinstruments.com"){
+            e.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: $( $(this).attr('href') ).offset().top
+            }, 1600);
+        }
+
     });
 
     $('#menu_btn').click(function(){
